@@ -1,0 +1,79 @@
+.root {
+}
+
+.content {
+  @apply relative;
+
+  .fakeBig {
+    top: -5rem;
+    /* margin: auto;
+    top: -120px;
+    left: -10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; */
+
+    /* @screen sm {
+      left: -80px;
+      top: -30%;
+    } */
+  }
+}
+
+.pCard {
+  position: relative;
+  /* width: auto; */
+  @screen sm {
+    /* width: 20%; */
+  }
+  &:nth-child(1) {
+    @media screen and (max-width: 420px) {
+      transform: scale(0.9) !important;
+    }
+    z-index: 800;
+    @screen sm {
+      transform: scale(0);
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: 420px) {
+      transform: scale(0.9) !important;
+    }
+    z-index: 900;
+    @screen sm {
+      transform: scale(0);
+    }
+  }
+  &:nth-child(3) {
+    @media screen and (max-width: 420px) {
+      transform: scale(0.9) !important;
+    }
+    z-index: 1000;
+    @screen sm {
+      transform: scale(0);
+    }
+  }
+  &:nth-child(4) {
+    @media screen and (max-width: 420px) {
+      transform: scale(0.9) !important;
+    }
+    z-index: 900;
+    @screen sm {
+      transform: scale(0);
+    }
+  }
+  &:nth-child(5) {
+    @media screen and (max-width: 420px) {
+      transform: scale(0.9) !important;
+    }
+    z-index: 800;
+    @screen sm {
+      transform: scale(0);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.root {
+  padding: 0 16px;
+  width: 100%;
+  margin: 0 auto;
+  @screen md {
+    width: 85%;
+  }
+  @screen lg {
+    width: 75%;
+  }
+}

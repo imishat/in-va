@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@icons/*": ["components/UI/icons/*"],
+      "@common/*": ["components/common/*"],
+      "@components/*": ["components/*"],
+      "@lib/*": ["lib/*"],
+      "@api-lib/*": ["api-lib/*"],
+      "@assets/*": ["assets/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

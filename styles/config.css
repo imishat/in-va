@@ -1,0 +1,40 @@
+:root {
+  --primary: #03a9f4;
+  --secondary: #0070f3;
+  --accent: #ff5722;
+  --accent2: #ffeb3b;
+
+  --text-base: #ffeb3b;
+  --text-primary: #111827;
+  --text-secondary: #b0b0b0;
+  --text-accent: #ff5722;
+  --text-accent2: #0070f3;
+
+  --accent-0: #fff;
+  --accent-1: #f8f8f8;
+  --accent-2: #e5e5e5;
+  --accent-3: #c2c2c2;
+  --accent-4: #888888;
+  --accent-5: #565656;
+  --accent-6: #444444;
+  --accent-7: #393e46;
+  --accent-8: #111111;
+  --accent-9: #000;
+
+  --fake-text-color: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] {
+  --accent-9: #fff;
+  --accent-8: #fafafa;
+  --accent-7: #e5e5e5;
+  --accent-6: #999999;
+  --accent-5: #888888;
+  --accent-4: #565656;
+  --accent-3: #444444;
+  --accent-2: #393e46;
+  --accent-1: #111111;
+  --accent-0: #000;
+
+  --fake-text-color: rgba(255, 255, 255, 0.04);
+}

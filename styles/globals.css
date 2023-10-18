@@ -1,0 +1,19 @@
+/* autoprefixer grid: autoplace */
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+@import "./config.css";
+@import "./chrome-bug.css";
+
+@import "tailwindcss/base";
+@import "./base.css";
+
+@import "tailwindcss/components";
+@import "./components.css";
+
+@import "tailwindcss/utilities";
+
+@import "./mobile-nav.css";
+
+@import "./home.css";
+
+@import "./override.css";

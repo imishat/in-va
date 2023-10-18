@@ -1,0 +1,40 @@
+__   __
+\ \  /
+ \ \/
+  \/
+  ||
+  ||
+  --
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+PROGRAMMER | Software Engineer
+
+Hamish Williams
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+twitter.com/
+github.com/
+
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+React
+Next.js
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS
+
+Gotham
+Arial

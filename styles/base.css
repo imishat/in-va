@@ -1,0 +1,98 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gotham", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* No scrolling during intro animation */
+  overflow-y: hidden;
+}
+
+.parent-scroller {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* pointer-events: none; */
+}
+
+/* customize scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--accent-1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: var(--accent-3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-4);
+}
+
+/* customize select element content */
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--primary);
+  background: var(--accent2);
+}
+
+::selection {
+  color: var(--primary);
+  background: var(--accent2);
+}
+
+/* .resume-pdf {
+  @media print {
+    body {
+      width: 21cm;
+      height: 29.7cm;
+      margin: 30mm 45mm 30mm 45mm;
+    }
+  }
+} */
+
+.three-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.anim-rotate {
+  animation: rotateInf 5s forwards infinite;
+}
+
+@keyframes rotateInf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
