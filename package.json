@@ -33,6 +33,7 @@
     "react-fluid-scroll": "^1.0.0",
     "react-parallax": "^3.3.0",
     "react-parallax-mouse": "^1.6.1",
+    "react-player": "^2.13.0",
     "react-three-fiber": "^6.0.13",
     "three": "0.127.0",
     "valtio": "^1.5.2",

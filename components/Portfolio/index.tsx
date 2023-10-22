@@ -147,7 +147,7 @@ function Portfolio() {
       <Container>
         <div className={cn('items-center justify-between', s.content)}>
           <div className="">
-            <h2 className="mb-12 text-6xl font-bold">
+            <h2 className="mb-12 text-5xl lg:text-6xl font-bold">
               <motion.h2
                 className={cn('fake-big', s.fakeBig)}
                 style={{ y: yPosAnim, scale: scaleAnim }}
@@ -189,7 +189,7 @@ function Portfolio() {
                 </motion.div>
               ))} */}
             </motion.div>
-            <div className="mt-20 text-center">
+            <div className="mt-8 lg:mt-20 text-center">
               <Link href="/gallery">
                 <a className="font-bold text-lg">View More</a>
               </Link>

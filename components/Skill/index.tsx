@@ -80,7 +80,7 @@ function Skill() {
     {
       title: 'Pay monthly at 0% APR      ',
       description:
-        'You can pay over time when you choose to check out with Apple Card Monthly Installments.',
+        'You can pay over time when you can by our Installments.',
       icon: faDollar,
     },
     {
@@ -101,30 +101,30 @@ function Skill() {
             //     'linear-gradient(-45deg, #fff6d9ff, #ffcddf52, #009dd6ba)',
             // }}
           >
-            <div className="grid grid-cols-2 items-center justify-between ">
+            <div className="grid lg:grid-cols-2 items-center justify-between">
               <div className="relative flex items-center justify-center">
-                <img src={img.src} />
-                <h2 className="absolute text-7xl pb-6 font-black w-40 text-center">
+                <img src={img.src} className="lg:rounded-r-2xl w-full" />
+                <h2 className="absolute text-2xl lg:text-7xl pb-6 font-black w-20 lg:w-40 text-center">
                   What You Get
-                  <span className="text-sm block text-secondary my-4">in</span>
-                  <span className="text-2xl block">iNVA</span>
+                  <span className="text-sm block text-secondary lg:my-4">in</span>
+                  <span className="text-base !text-black lg:text-2xl block">iNVA</span>
                 </h2>
               </div>
-              <div className="p-6 pl-0 grid gap-12">
+              <div className="py-4 lg:p-0 lg:py-6 grid gap-8 lg:gap-12 my-8 lg:my-0">
                 {list?.map((item, i) => (
                   <div className="flex items-center max-w-[30em]">
-                    <div className="bg-white p-8 border-4 border-gray-400 text-white !bg-black/95 rounded-full h-24 w-24 flex items-center justify-center translate-x-[-50%]">
-                      <FontAwesomeIcon icon={item?.icon} className="h-8 w-8" />
+                    <div className="bg-white p-6 lg:p-8 border-2 lg:border-4 border-gray-400 text-white !bg-black/95 rounded-full h-16 lg:h-24 w-16 lg:w-24 flex items-center justify-center lg:translate-x-[-50%]">
+                      <FontAwesomeIcon icon={item?.icon} className="h-4 w-4 lg:h-8 lg:w-8" />
                     </div>
                     <motion.div
                       key={i}
                       initial={{ x: '100%', opacity: 0 }}
                       whileInView={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.6, delay: 0.1 }}
-                      className="p-4"
+                      className="p-4 py-0 lg:py-4"
                     >
-                      <h4 className="font-bold text-2xl mb-2">{item?.title}</h4>
-                      <p className="text-secondary text-sm">
+                      <h4 className="font-bold text-lg lg:text-2xl mb-2">{item?.title}</h4>
+                      <p className="text-secondary text-xs lg:text-sm">
                         {item?.description}
                       </p>
                     </motion.div>

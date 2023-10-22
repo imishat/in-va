@@ -17,7 +17,7 @@
   .ball3 {
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     /* transform: translate(-50%, -50%); */
     /* border-radius: 50%; */
     width: 0px;
@@ -92,16 +92,19 @@
 }
 
 .section {
-  padding-top: 6rem;
+  padding-top: 2rem;
   /* min-height: calc(var(--vh, 1vh) * 100); */
+  @screen sm {
+    padding-top: 6rem;
+  }
 }
 
 .portfolio {
   margin-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 
   @screen sm {
-    margin-top: 20rem;
+    margin-top: 12rem;
     padding-bottom: 6rem;
   }
 }

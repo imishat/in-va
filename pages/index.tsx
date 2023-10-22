@@ -42,6 +42,8 @@ import { useRouter } from 'next/router'
 import { media } from '@utils/style'
 import img from '@assets/images/mock-t.png'
 import imgv from '@assets/images/mv.jpg'
+import simg from '@assets/images/shadow.png'
+import ReactPlayer from 'react-player'
 
 interface PageProps {
   section: any
@@ -50,7 +52,7 @@ interface PageProps {
 const Home: NextPage<PageProps> = ({ section }) => {
   const [animationComplete, setAnimationComplete] = useState(false)
   const [footerInView, setFooterInView] = useState(false)
-  const [scrollerHeight, setcSrollerHeight] = useState(0)
+  const [mob, setMob] = useState(false)
   const { scrollYProgress } = useViewportScroll()
   const scaleAnim = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1, 1.1])
   const yPosAnim = useTransform(scrollYProgress, [0, 0.5, 1], [30, 0, -50])
@@ -85,6 +87,12 @@ const Home: NextPage<PageProps> = ({ section }) => {
       }
     }
   }
+
+  useEffect(() => {
+    let media = window.matchMedia('(max-width: 664px)')
+    setMob(media?.matches)
+  }, [])
+
   useEffect(() => {
     // Inner Page height for mobile devices
     let vh = window.innerHeight * 0.01
@@ -264,6 +272,10 @@ const Home: NextPage<PageProps> = ({ section }) => {
     }
   }, [animationComplete])
 
+  const VIDEO_PATH =
+    'https://github.com/Yadab-Sd/art-world/assets/23726737/c89824bd-4b0a-4beb-b448-81344c4e10f3'
+  const playerRef = useRef(null)
+
   return (
     <div>
       {/* <CustomCursor /> */}
@@ -282,14 +294,17 @@ const Home: NextPage<PageProps> = ({ section }) => {
             <div className="cta">
               <div className="title w-6/12 font-bold">
                 <h2 className="playfulx text-5xl tracking-wide md:text-5xl lg:text-8xl">
-                  <span className="heading">Grab</span> Your Smartphone Today
+                  <span className="flex lg:inline">
+                    <span className="heading">Grab</span> Your
+                  </span>{' '}
+                  Smartphone Today
                 </h2>
               </div>
               <div
                 className="peep-imagex brushx panel__imgx home-obsx sky flex w-min items-center justify-center"
                 style={{
                   transition: 'all 1s ease',
-                  transform: 'translateZ(20px) scale(1.5)',
+                  transform: 'translateZ(20px) scale(1.2)',
                   transformStyle: 'preserve-3d',
                 }}
                 // data-tilt
@@ -301,20 +316,20 @@ const Home: NextPage<PageProps> = ({ section }) => {
                   // data-tilt
                   // data-tilt-full-page-listening
                   // data-tilt-reset="false"
-                  className="flex items-center justify-center relative z-10"
-                  style={{ width: 500 }}
+                  className="flex items-center justify-center relative z-10 mb-6 lg:mb-0"
+                  style={{ width: widthRef.current?.matches ? 500 : '80vw' }}
                 >
                   <img
                     src={img.src}
                     alt="iNVA"
                     style={{
-                      width: widthRef.current?.matches ? 600 : 200,
+                      width: widthRef.current?.matches ? 600 : '75vw',
                       margin: '0 auto',
                       filter: 'opacity(1)',
                       position: 'relative',
                       zIndex: 1,
                     }}
-                    className="cloud"
+                    className="cloud !mt-0 lg:!mt-0 p-8 lg:p-0"
                   />
                 </div>
                 {/* <HashObstacles /> */}
@@ -324,8 +339,8 @@ const Home: NextPage<PageProps> = ({ section }) => {
             <div className="job-title mt-8">
               {/* <i className="text-xs font-light text-secondary">{'<script>'}</i> */}
               <p className="ml-4 flex text-accent">
-                <h4 className="mr-2 font-mono text-xl text-secondary">
-                  Less price with best service!
+                <h4 className="mr-2 font-mono text-lg lg:text-xl text-secondary">
+                  Less price with best quality!
                 </h4>
                 {/* @ts-ignore */}
                 {/* <Typed
@@ -349,11 +364,91 @@ const Home: NextPage<PageProps> = ({ section }) => {
           </main>
 
           <div className="section-container" ref={sectionsRef}>
-            <div className="section" id={section}>
+            <div className="section bg-gray-200/20x" id={section}>
               <About />
             </div>
             <div className="" id={section}>
               <Skill />
+            </div>
+            <div
+              className="my-8 lg:my-20 py-6"
+              id={section}
+              style={{
+                background: `url(${simg.src})`,
+                backgroundPosition: 'bottom',
+              }}
+            >
+              <h2 className="text-4xl text-center font-bold text-center mb-12 text-gray-400">
+                Smartphone Variants
+              </h2>
+              <div className="flex justify-center">
+                <div className="grid grid-cols-2 gap-2 lg:gap-6">
+                  <div className="rounded-md bg-white border-2 p-8 lg:p-20">
+                    <h2 className="text-accent6 text-lg lg:text-2xl font-bold text-center mb-4">
+                      iNVA X
+                    </h2>
+                    <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
+                      $600
+                    </h2>
+                    <div className="bg-gray-200 h-[1px] mb-4 w-full block" />
+                    <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
+                      Overview
+                    </h2>
+                    <ul className="text-secondary text-center text-xs lg:text-sm leading-loose">
+                      <li>Truly unlimited</li>
+                      <li>Far from basic</li>
+                      <li>Data boosting</li>
+                    </ul>
+                  </div>
+                  <div className="rounded-md bg-white border-2 p-8 lg:p-20">
+                    <h2 className="text-accent4 text-lg lg:text-2xl font-bold text-center mb-4">
+                      iNVA Pro
+                    </h2>
+                    <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
+                      $800
+                    </h2>
+                    <div className="bg-gray-200 h-[1px] mb-4 w-full block" />
+                    <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
+                      Overview
+                    </h2>
+                    <ul className="text-secondary text-center text-xs lg:text-sm leading-loose">
+                      <li>50 GB premium</li>
+                      <li>5G UW access</li>
+                      <li>Int'l coverage</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="portfoliox bg-cover py-12 !pb-40 relative lg:h-96 flex flex-col items-center mb-40 lg:mb-80"
+              id={section}
+              style={{
+                backgroundImage: `linear-gradient(45deg, var(--accent6), var(--accent5))`,
+              }}
+            >
+              <h2 className="text-white text-xl lg:text-4xl font-bold text-center mb-4">
+                Whole In A Minute
+              </h2>
+              <div className="flex justify-center translate-y-[60%] lg:translate-y-[40%] absolute top-0 vid px-4 lg:px-0">
+                {/* @ts-ignore */}
+                <ReactPlayer
+                  ref={playerRef}
+                  url={VIDEO_PATH}
+                  controls={true}
+                  className="lg:w-96 bg-white rounded-lg border-4 border-white"
+                  stopOnUnmount
+                  style={
+                    mob
+                      ? {
+                          width: '100vw',
+                          display: 'flex',
+                          justifyContent: 'center',
+                        }
+                      : {}
+                  }
+                />
+              </div>
             </div>
             <div className="portfolio" id={section}>
               <Portfolio />
@@ -438,12 +533,12 @@ const Home: NextPage<PageProps> = ({ section }) => {
           <img
             src={imgv.src}
             alt=""
-            className="absolute bottom-[-100px] right-0 w-4/5"
+            className="absolute bottom-20 lg:bottom-[-100px] right-0 w-4/5"
           />
         </div>
       </motion.div>
       <div className="fixed left-0 right-0 bottom-0">
-        <p className="text-gray-600 text-left py-4 text-sm pl-4">
+        <p className="text-secondary lg:text-gray-600 text-left py-4 text-xs lg:text-sm pl-4">
           Copyright &copy; | {new Date().getFullYear()} | iNVA
         </p>
       </div>
