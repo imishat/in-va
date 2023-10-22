@@ -3,6 +3,10 @@
   --secondary: #0070f3;
   --accent: #ff5722;
   --accent2: #ffeb3b;
+  --accent3: #eeca93;
+  --accent4: #ed89a9;
+  --accent5: #f2b0fb;
+  --accent6: #9ce0f4;
 
   --text-base: #ffeb3b;
   --text-primary: #111827;
@@ -24,7 +28,7 @@
   --fake-text-color: rgba(0, 0, 0, 0.04);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --accent-9: #fff;
   --accent-8: #fafafa;
   --accent-7: #e5e5e5;

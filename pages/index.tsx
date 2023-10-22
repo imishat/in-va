@@ -325,7 +325,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
               {/* <i className="text-xs font-light text-secondary">{'<script>'}</i> */}
               <p className="ml-4 flex text-accent">
                 <h4 className="mr-2 font-mono text-xl text-secondary">
-                  From $999 or $41.62/mo. for 24 mo.2
+                  Less price with best service!
                 </h4>
                 {/* @ts-ignore */}
                 {/* <Typed

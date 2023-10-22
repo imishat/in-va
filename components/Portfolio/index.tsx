@@ -16,6 +16,8 @@ import { transition } from '@utils/index'
 import Link from 'next/link'
 import img1 from '@assets/images/m1.jpg'
 import img2 from '@assets/images/m2.jpg'
+import img3 from '@assets/images/m3.jpeg'
+import img4 from '@assets/images/m4.webp'
 
 const cardData: any[] = [
   // Photo by ivan Torres on Unsplash
@@ -171,8 +173,8 @@ function Portfolio() {
               <div className="grid grid-cols-2 grid-rows-2">
                 <img src={img1.src} alt="" />
                 <img src={img2.src} alt="" />
-                <img src={img2.src} alt="" />
-                <img src={img1.src} alt="" />
+                <img src={img4.src} alt="" />
+                <img src={img3.src} alt="" />
               </div>
 
               {/* {projects.map((project, i) => (

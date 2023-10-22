@@ -5,7 +5,7 @@ interface PageHeadProps {
   title?: string
 }
 
-function PageHead({ title = 'iNVA' }: PageHeadProps) {
+function PageHead({ title = 'A way of new journey' }: PageHeadProps) {
   return (
     <Head>
       <title>iNVA | {title}</title>
