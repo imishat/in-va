@@ -110,10 +110,10 @@ const ContactPage = () => {
       url: 'https://api.elasticemail.com/v2/email/send',
       data: emailData,
     })
-      .then((response) => {
+      .then((response: any) => {
         console.log('Email sent successfully')
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.error('Email sending failed', error)
       })
   }
