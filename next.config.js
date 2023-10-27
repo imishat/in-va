@@ -5,14 +5,15 @@ const nextConfig = {
     LINKEDIN: 'https://www.linkedin.com/in/inva/',
     FACEBOOK: 'https://www.facebook.com/inva/',
     YOUTUBE: 'https://www.youtube.com/inva/',
-    WEBSITE: 'https://inva.com',
+    WEBSITE: 'https://invausa.com',
     EXPERIENCE: 3,
-    EMAIL: 'help@inva.com',
+    EMAIL: 'info@invausa.com',
+    SUPPORT_EMALI: 'support@invausa.com',
     MOBILE: 'xxx xxx xxxx',
-    ADDRESS: '1097 Granville Ave, Fairfield, IA, 52556, USA',
+    ADDRESS: '-',
   },
   images: {
-    domains: [],
+    domains: ['invausa.com'],
   },
   webpack(config, { isServer }) {
     // Run custom scripts
