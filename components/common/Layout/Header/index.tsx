@@ -31,6 +31,7 @@ import {
 import Image from 'next/image'
 import { LeetcodeIcon } from '@components/UI/icons'
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
+import logoImg from '../../../../public/logo.png'
 
 function Header({ start = false }: { start?: boolean }) {
   const [showDownload, setShowDownload] = useState(false)
@@ -114,7 +115,7 @@ function Header({ start = false }: { start?: boolean }) {
               onMouseOver={() => setType('hamburger')}
               onMouseLeave={() => setType('default')}
             >
-              iNVA
+              <img src={logoImg.src} height={40} className="h-12" alt="iNVA" />
             </a>
           </Link>
 

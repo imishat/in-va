@@ -40,7 +40,7 @@ import CustomCursor from '@components/UI/CustomCursor'
 import CustomCursorContext from '@components/UI/context/CustomCursorContext'
 import { useRouter } from 'next/router'
 import { media } from '@utils/style'
-import img from '@assets/images/mock-t.png'
+import img from '@assets/images/mock.png'
 import imgv from '@assets/images/mv.jpg'
 import simg from '@assets/images/shadow.png'
 import ReactPlayer from 'react-player'
@@ -385,7 +385,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
                 <div className="grid grid-cols-2 gap-2 lg:gap-6">
                   <div className="rounded-md bg-white border-2 p-8 lg:p-20">
                     <h2 className="text-accent6 text-lg lg:text-2xl font-bold text-center mb-4">
-                      iNVA X
+                      iNVA
                     </h2>
                     <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
                       $600
@@ -402,7 +402,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
                   </div>
                   <div className="rounded-md bg-white border-2 p-8 lg:p-20">
                     <h2 className="text-accent4 text-lg lg:text-2xl font-bold text-center mb-4">
-                      iNVA Pro
+                      iNVA-X
                     </h2>
                     <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
                       $800

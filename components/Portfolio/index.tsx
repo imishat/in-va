@@ -16,7 +16,7 @@ import { transition } from '@utils/index'
 import Link from 'next/link'
 import img1 from '@assets/images/m1.jpg'
 import img2 from '@assets/images/m2.jpg'
-import img3 from '@assets/images/m3.jpg'
+import img3 from '@assets/images/m3.jpeg'
 import img4 from '@assets/images/m4.webp'
 
 const cardData: any[] = [

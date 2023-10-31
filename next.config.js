@@ -14,6 +14,7 @@ const nextConfig = {
   },
   images: {
     domains: ['invausa.com'],
+    // disableStaticImages: true,
   },
   webpack(config, { isServer }) {
     // Run custom scripts
