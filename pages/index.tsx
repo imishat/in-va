@@ -394,10 +394,12 @@ const Home: NextPage<PageProps> = ({ section }) => {
                     <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
                       Overview
                     </h2>
-                    <ul className="text-secondary text-center text-xs lg:text-sm leading-loose">
-                      <li>Truly unlimited</li>
-                      <li>Far from basic</li>
-                      <li>Data boosting</li>
+                    <ul className="text-secondary text-xs lg:text-sm leading-loose">
+                      <li>Type: MT6765V/XB(G36), 12nm</li>
+                      <li>No. of Cores: Quad-core</li>
+                      <li>Camera: 13MP/5MP</li>
+                      <li>Frequency: Upto 2.2GHz</li>
+                      <li>Memory: 6+128 (emmc+ddr4x)</li>
                     </ul>
                   </div>
                   <div className="rounded-md bg-white border-2 p-8 lg:p-20">
@@ -411,10 +413,12 @@ const Home: NextPage<PageProps> = ({ section }) => {
                     <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
                       Overview
                     </h2>
-                    <ul className="text-secondary text-center text-xs lg:text-sm leading-loose">
-                      <li>50 GB premium</li>
-                      <li>5G UW access</li>
-                      <li>Int'l coverage</li>
+                    <ul className="text-secondary text-xs lg:text-sm leading-loose">
+                      <li>Type: Dimensity6020, 7nm</li>
+                      <li>No. of Cores: Octa-core</li>
+                      <li>Camera: 50MP/8MP</li>
+                      <li>Frequency: Upto 2.2GHz</li>
+                      <li>Memory: 6+128 (emmc+ddr4x)</li>
                     </ul>
                   </div>
                 </div>
