@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useAnimation } from 'framer-motion'
-import img from '@assets/images/hand.jpg'
+import img from '@assets/images/hand-2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBoxesStacked,
@@ -104,16 +104,16 @@ function Skill() {
             <div className="grid lg:grid-cols-2 items-center justify-between">
               <div className="relative flex items-center justify-center">
                 <img src={img.src} className="lg:rounded-r-2xl w-full" />
-                <h2 className="absolute text-2xl lg:text-7xl pb-6 font-black w-20 lg:w-40 text-center">
+                {/* <h2 className="absolute text-2xl lg:text-7xl pb-6 font-black w-20 lg:w-40 text-center">
                   What You Get
                   <span className="text-sm block text-secondary lg:my-4">in</span>
                   <span className="text-base !text-black lg:text-2xl block">iNVA</span>
-                </h2>
+                </h2> */}
               </div>
               <div className="py-4 lg:p-0 lg:py-6 grid gap-8 lg:gap-12 my-8 lg:my-0">
                 {list?.map((item, i) => (
                   <div className="flex items-center max-w-[30em]">
-                    <div className="bg-white p-6 lg:p-8 border-2 lg:border-4 border-gray-400 text-white !bg-black/95 rounded-full h-16 lg:h-24 w-16 lg:w-24 flex items-center justify-center lg:translate-x-[-50%]">
+                    <div className="bg-white ml-4 lg:ml-0 p-6 lg:p-8 border-2 lg:border-4 border-gray-400 text-white !bg-black/95 rounded-full h-16 lg:h-24 w-16 lg:w-24 flex items-center justify-center lg:translate-x-[-50%]">
                       <FontAwesomeIcon icon={item?.icon} className="h-4 w-4 lg:h-8 lg:w-8" />
                     </div>
                     <motion.div

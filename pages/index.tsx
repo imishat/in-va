@@ -40,7 +40,7 @@ import CustomCursor from '@components/UI/CustomCursor'
 import CustomCursorContext from '@components/UI/context/CustomCursorContext'
 import { useRouter } from 'next/router'
 import { media } from '@utils/style'
-import img from '@assets/images/mock.png'
+import img from '@assets/images/r/mob3-t.png'
 import imgv from '@assets/images/mv.jpg'
 import simg from '@assets/images/shadow.png'
 import ReactPlayer from 'react-player'
@@ -329,7 +329,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
                       position: 'relative',
                       zIndex: 1,
                     }}
-                    className="cloud !mt-0 lg:!mt-0 p-8 lg:p-0"
+                    className="cloud !mt-0 lg:!mt-0 p-4 lg:p-4 my-shadow"
                   />
                 </div>
                 {/* <HashObstacles /> */}
@@ -376,6 +376,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
               style={{
                 background: `url(${simg.src})`,
                 backgroundPosition: 'bottom',
+                backgroundRepeat: 'no-repeat',
               }}
             >
               <h2 className="text-4xl text-center font-bold text-center mb-12 text-gray-400">
@@ -383,7 +384,7 @@ const Home: NextPage<PageProps> = ({ section }) => {
               </h2>
               <div className="flex justify-center">
                 <div className="grid grid-cols-2 gap-2 lg:gap-6">
-                  <div className="rounded-md bg-white border-2 p-8 lg:p-20">
+                  <div className="rounded-md bg-white border-2 p-4 lg:p-20">
                     <h2 className="text-accent6 text-lg lg:text-2xl font-bold text-center mb-4">
                       iNVA
                     </h2>
@@ -395,14 +396,14 @@ const Home: NextPage<PageProps> = ({ section }) => {
                       Overview
                     </h2>
                     <ul className="text-secondary text-xs lg:text-sm leading-loose">
-                      <li>Type: MT6765V/XB(G36), 12nm</li>
-                      <li>No. of Cores: Quad-core</li>
-                      <li>Camera: 13MP/5MP</li>
-                      <li>Frequency: Upto 2.2GHz</li>
-                      <li>Memory: 6+128 (emmc+ddr4x)</li>
+                      <li className="lg:mb-2">Type: MT6765V/XB(G36), 12nm</li>
+                      <li className="lg:mb-2">No. of Cores: Quad-core</li>
+                      <li className="lg:mb-2">Camera: 13MP/5MP</li>
+                      <li className="lg:mb-2">Frequency: Upto 2.2GHz</li>
+                      <li className="lg:mb-2">Memory: 6+128 (emmc+ddr4x)</li>
                     </ul>
                   </div>
-                  <div className="rounded-md bg-white border-2 p-8 lg:p-20">
+                  <div className="rounded-md bg-white border-2 p-4 lg:p-20">
                     <h2 className="text-accent4 text-lg lg:text-2xl font-bold text-center mb-4">
                       iNVA-X
                     </h2>
@@ -414,11 +415,11 @@ const Home: NextPage<PageProps> = ({ section }) => {
                       Overview
                     </h2>
                     <ul className="text-secondary text-xs lg:text-sm leading-loose">
-                      <li>Type: Dimensity6020, 7nm</li>
-                      <li>No. of Cores: Octa-core</li>
-                      <li>Camera: 50MP/8MP</li>
-                      <li>Frequency: Upto 2.2GHz</li>
-                      <li>Memory: 6+128 (emmc+ddr4x)</li>
+                      <li className="lg:mb-2">Type: Dimensity6020, 7nm</li>
+                      <li className="lg:mb-2">No. of Cores: Octa-core</li>
+                      <li className="lg:mb-2">Camera: 50MP/8MP</li>
+                      <li className="lg:mb-2">Frequency: Upto 2.2GHz</li>
+                      <li className="lg:mb-2">Memory: 6+128 (emmc+ddr4x)</li>
                     </ul>
                   </div>
                 </div>

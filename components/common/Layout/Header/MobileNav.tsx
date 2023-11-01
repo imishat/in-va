@@ -8,6 +8,7 @@ import { useDimensions } from '../../../../hooks/use-dimentions'
 import { useTheme } from 'next-themes'
 import { spring } from '@utils/index'
 import Link from 'next/link'
+import logo from '../../../../public/logo-black.png'
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -47,7 +48,10 @@ export const MobileNav = () => {
       <MenuToggle toggle={() => toggleOpen()} />
       <h1 className="fixed right-0 top-0">
         <Link href="/?noanim=1">
-          <a className="p-4 px-6 text-2xl font-bold flex">iNVA</a>
+          <a className="p-4 px-6 text-2xl font-bold flex">
+            {' '}
+            <img src={logo.src} height={35} className="h-10" alt="iNVA" />
+          </a>
         </Link>
       </h1>
     </motion.nav>
