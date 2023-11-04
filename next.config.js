@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    LINKEDIN: 'https://www.linkedin.com/in/invausa',
+    LINKEDIN: 'https://www.linkedin.com/company/invausa',
     FACEBOOK: 'https://www.facebook.com/invausa',
     YOUTUBE: 'https://www.youtube.com/invausa',
     WEBSITE: 'https://invausa.com',
