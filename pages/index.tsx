@@ -388,9 +388,6 @@ const Home: NextPage<PageProps> = ({ section }) => {
                     <h2 className="text-accent6 text-lg lg:text-2xl font-bold text-center mb-4">
                       iNVA
                     </h2>
-                    <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
-                      $600
-                    </h2>
                     <div className="bg-gray-200 h-[1px] mb-4 w-full block" />
                     <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
                       Overview
@@ -406,9 +403,6 @@ const Home: NextPage<PageProps> = ({ section }) => {
                   <div className="rounded-md bg-white border-2 p-4 lg:p-20">
                     <h2 className="text-accent4 text-lg lg:text-2xl font-bold text-center mb-4">
                       iNVA-X
-                    </h2>
-                    <h2 className="text-2xl lg:text-5xl font-black text-center mb-4">
-                      $800
                     </h2>
                     <div className="bg-gray-200 h-[1px] mb-4 w-full block" />
                     <h2 className="text-secondary text-center text-4lg font-semibold text-center mb-4">
