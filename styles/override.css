@@ -60,11 +60,11 @@
   transform: translate3d(0, -100%, 0) !important;
 }
 
-.canvas > div {
+.canvas>div {
   z-index: 10000000;
 }
 
-#root > div > div {
+#root>div>div {
   pointer-events: none;
 }
 
@@ -72,6 +72,7 @@
   body {
     overflow: hidden;
   }
+
   .frame {
     display: grid;
     height: 100vh;
@@ -85,21 +86,26 @@
       '... ...'
       '... nav';
   }
+
   .frame__title {
     grid-area: title;
   }
+
   .frame__links {
     grid-area: links;
     justify-self: end;
     margin: 0;
   }
+
   .frame__link {
     pointer-events: auto;
   }
+
   .frame__nav {
     grid-area: nav;
     justify-self: end;
   }
+
   .bottom-left {
     padding: 0 0 2rem 3.7rem;
   }

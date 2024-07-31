@@ -1,0 +1,14 @@
+.hover-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: gray;
+    transition: width 1.5s ease-in-out;
+}
+
+.hover-box:hover::before {
+    width: 100%;
+}

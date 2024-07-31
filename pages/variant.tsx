@@ -1,92 +1,103 @@
-import React, { useEffect, useRef, useState } from 'react'
-import simg from '@assets/images/shadow.png'
+import React, { useEffect, useRef, useState } from "react";
+// import simg from "@assets/images/shadow.png";
+import icon from "@assets/images/icons/icon-cate-3.png";
+import img from "@assets/images/Screenshot 2024-07-18 at 01.15.45.png";
+import img1 from '@assets/images/phon1-removebg-preview.png';
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Variant = ({ section }: any) => {
   return (
-    <div
-    className="my-8 lg:my-20 py-6"
-    id={section}
-    style={{
-      background: `url(${simg.src})`,
-      backgroundPosition: 'bottom',
-      backgroundRepeat: 'no-repeat',
-    }}
-  >
-    <div className="bg-gray-100">
-      <div className="header-container text-center py-12 bg-purple-900 text-white">
-        <h1 className=" text-white mb-4 header-title text-3xl md:text-4xl lg:text-5xl font-bold">
-          Smartphone Variants For Everyone
-        </h1>
-        <p className="font-bold text-center text-[18px] mb-8 text-blue-200">
-          Discover iNVA, your gateway to high-quality smartphones at
-          unbeatable prices.
-        </p>
-        <a
-          href="#"
-          className="demo-button  bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-full transition duration-300"
-        >
-          INVA & INVA-X
-        </a>
-
-        <div className="flex flex-col lg:flex-row mt-14 gap-4">
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-white text-xl lg:text-4xl font-bold text-center mb-4">
-              INVA MODEL
-            </h2>
-
-            <ul className=" text-[16px]  text-blue-200 leading-loose">
-              <li className="mb-2 lg:mb-2">
-                Type: Dimensity6020, 7nm
-              </li>
-              <li className="mb-2 lg:mb-2">
-                No. of Cores: Octa-core
-              </li>
-              <li className="mb-2 lg:mb-2">Camera: 50MP/8MP</li>
-              <li className="mb-2 lg:mb-2">Frequency: Upto 2.2GHz</li>
-              <li className="mb-2 lg:mb-2">
-                Memory: 6+128 (emmc+ddr4x)
-              </li>
-            </ul>
-          </div>
-          <div className="w-full lg:w-1/2" data-aos="zoom-in">
-            <img
-              src="/gallery/bg_img.png"
-              alt="/"
-              className="w-full h-auto"
-            />
-          </div>
+    <div>
+      <div className="relative flex h-full w-full flex-wrap items-center justify-evenly bg-[#e2f0f9] py-5 lg:h-[90vh]">
+        <div className=" px-[15px]">
+          <h1 className="text-center text-2xl font-light text-[#333]">
+            EASIEST CHECHOUT WITH
+            <br />
+            <span className="mt-1 block text-[32px] font-bold">INVA</span>
+          </h1>
+          <p className="mx-auto mt-3 text-center text-sm font-normal text-[#444] lg:max-w-[65%]">
+     Inva Configuration Presentation
+          </p>
+          <img src={img1.src} className="h-[400px] w-[600px] max-w-full align-middle" />
         </div>
-
-        <div className="flex flex-col-reverse md:flex-col-reverse lg:flex-row mt-10 gap-4">
-          <div className="w-full lg:w-1/2" data-aos="zoom-in">
-            <img
-              src="/gallery/img6.jpeg"
-              alt="/"
-              className="w-full h-auto"
-            />
+        <div className="mt-14 text-center lg:self-start lg:text-left">
+          <div className="absolute top-0 hidden h-24 items-end bg-white p-1 lg:flex">
+            <img src={icon.src} className="flex flex-col items-end" />
           </div>
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-white text-xl lg:text-4xl font-bold text-center mb-4">
-              INVA-X MODEL
-            </h2>
-            <ul className="text-[16px] text-blue-200 leading-loose">
-              <li className="mb-2 lg:mb-2">
-                Type: Dimensity6020, 7nm
-              </li>
-              <li className="mb-2 lg:mb-2">
-                No. of Cores: Octa-core
-              </li>
-              <li className="mb-2 lg:mb-2">Camera: 50MP/8MP</li>
-              <li className="mb-2 lg:mb-2">Frequency: Upto 2.2GHz</li>
-              <li className="mb-2 lg:mb-2">
-                Memory: 6+128 (emmc+ddr4x)
-              </li>
+          <h1 className="text-3xl font-bold text-[#333] transition-colors duration-200 hover:text-white lg:ml-10">
+           INVA
+          </h1>
+          <p className="mt-6 max-w-[370px] border-b border-[#00000033] pb-[15px] text-sm leading-[25px] text-[#444]">
+            <ul>
+              <li>6.517 HD+waterDorp Display</li>
+              <li>Cost-effective with modern design</li>
+              <li>5000 Ah larger Battery</li>
             </ul>
+          </p>
+          <ul className="pt-[15px] text-sm font-bold text-[#444] ">
+            <li className="my-[16px] cursor-pointer">6.517 HD+ Display</li>
+            <li className="my-[16px] cursor-pointer">HelloG36(4G) Octa-core </li>
+            <li className="my-[16px] cursor-pointer"></li>
+            <li className="my-[16px] cursor-pointer">50 MP +VGA+VGA </li>
+            <li className="my-[16px] cursor-pointer">8MP Front Camera</li>
+            <li className="my-[16px] cursor-pointer">4GB+64GB ,(4Gb:128GB)</li>
+            <li className="my-[16px] cursor-pointer">5000mh (Battery)</li>
+            <li className="group mt-[40px] flex cursor-pointer items-center justify-center gap-5 transition-colors duration-200 hover:text-white lg:justify-start">
+              View all Products
+              <span className="rounded-full bg-[#333] p-2 transition-colors duration-200 group-hover:bg-white">
+                <MdOutlineKeyboardArrowRight className="text-2xl text-white transition-colors duration-200 group-hover:text-[#333]" />
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="relative flex h-full w-full flex-row-reverse flex-wrap items-center justify-evenly  py-5 lg:h-[90vh]">
+        <div className=" px-[15px]">
+          <h1 className="text-center text-2xl font-light text-[#333]">
+            EASIEST CHECHOUT WITH
+            <br />
+            <span className="mt-1 block text-[32px] font-bold">iNVA X</span>
+          </h1>
+          <p className="mx-auto mt-3 text-center text-sm font-normal text-[#444] lg:max-w-[65%]">
+          Inva Configuration Presentation
+          </p>
+          <img src={img.src} className="h-[500px] w=[500px] max-w-full align-middle" />
+        </div>
+        <div className="mt-14 text-center lg:self-start lg:text-left">
+          <div className="absolute top-0 hidden h-24 items-end bg-[#e2f0f9] p-1 lg:flex">
+            <img src={icon.src} className="flex flex-col items-end" />
           </div>
+          <h1 className="text-3xl font-bold text-[#333] transition-colors duration-200 hover:text-white lg:ml-10">
+            INVA X
+          </h1>
+          <p className="mt-6 max-w-[370px] border-b border-[#00000033] pb-[15px] text-sm leading-[25px] text-[#444]">
+          <ul>
+              <li>Dimensity 6020 Octa-core 2.2Ghz+7nm </li>
+              <li>6.6HD+Hole-punch Display</li>
+              <li>-Most-Cost-effective 5G with powerful performance</li>
+              <li>Fashion design and breathing light (optional)</li>
+            </ul> 
+          </p>
+          <ul className="pt-[15px] text-sm font-bold text-[#444] ">
+            <li className="my-[16px] cursor-pointer">6.6HD+Hole-punch Display</li>
+            <li className="my-[16px] cursor-pointer">Dimensity 6020 Octa-core 2.2Ghz+7nm</li>
+            <li className="my-[16px] cursor-pointer">50 MP +2+VGA </li>
+            <li className="my-[16px] cursor-pointer">8MP Front camera</li>
+            <li className="my-[16px] cursor-pointer">6GB+128GB ,(8Gb:264GB)</li>
+            <li className="my-[16px] cursor-pointer">3 Card Slot</li>
+            <li className="my-[16px] cursor-pointer">5000 mAh Battery</li>
+            <li className="group mt-[40px] flex cursor-pointer items-center gap-5 transition-colors duration-200 hover:text-[#9ce0f4]">
+              View all Products
+              <span className="rounded-full bg-[#9ce0f4] p-2 transition-colors duration-200 group-hover:bg-[#9ce0f4]">
+                <MdOutlineKeyboardArrowRight className="text-2xl text-[#333] transition-colors duration-200 group-hover:text-white" />
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>)
-}
+  );
+};
 
-export default Variant
+export default Variant;
