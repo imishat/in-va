@@ -8,7 +8,7 @@ import {
   useTransform,
   useViewportScroll,
 } from 'framer-motion'
-import { Button, IntroOverlay } from '@components/UI'
+import { Button, IntroOverlay } from "../components/UI"
 import { gsap } from 'gsap'
 import { TweenMax } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'

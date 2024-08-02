@@ -1,13 +1,13 @@
-import '@styles/globals.css'
+import 'styles/globals.css'
 import type { AppProps } from 'next/app'
 import React, { ReactElement, useEffect, useRef } from 'react'
 import { NextPage } from 'next'
 import { AnimatePresence } from 'framer-motion'
-import SmoothScroll from '@common/SmoothScroll'
+import SmoothScroll from '../components/common/SmoothScroll'
 import { ThemeProvider } from 'next-themes'
-import CustomCursorManager from '@components/UI/context/manager'
-import * as THREE from 'three'
-import PageWrapper from '@common/PageWrapper'
+// import CustomCursorManager from '@components/UI/context/manager'
+// import * as THREE from 'three'
+// import PageWrapper from '@common/PageWrapper'
 
 type DefaultLayoutType = ({
   children,

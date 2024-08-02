@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 // import simg from "@assets/images/shadow.png";
-import icon from "@assets/images/icons/icon-cate-3.png";
-import img from "@assets/images/Screenshot 2024-07-18 at 01.15.45.png";
-import img1 from '@assets/images/phon1-removebg-preview.png';
+import icon from "../public/assets/images/icons/icon-cate-3.png";
+import img from "../public/assets/images/Screenshot 2024-07-18 at 01.15.45.png";
+import img1 from '../public/assets/images/phon1-removebg-preview.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 
 const Variant = ({ section }: any) => {
   return (

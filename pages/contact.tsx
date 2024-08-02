@@ -1,12 +1,12 @@
-import GraphicAnim from '@common/GraphicAnim/GraphicAnim'
-import PageWrapper from '@common/PageWrapper'
+
+// import PageWrapper from '@common/PageWrapper'
 import React, { ReactElement, useState } from 'react'
-import GraphicPage from '../components/common/GraphicPage/GraphicPage'
+
 import ReactFluidScroll from 'react-fluid-scroll'
-import PageTitle from '@common/PageTitle'
-import { Button, SkillsAnimation } from '@components/UI'
-import AboutAnimation from '@components/UI/AboutAnimation'
-import { Main } from 'next/document'
+// import PageTitle from 'common/PageTitle'
+import { Button, SkillsAnimation } from 'components/UI'
+
+
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -18,9 +18,11 @@ import {
   faPhoneFlip,
   faPhoneSlash,
 } from '@fortawesome/free-solid-svg-icons'
-import { colors } from '@utils/index'
-import img from '@assets/images/hand-colored.png'
+
+import img from '../public/assets/images/hand-colored.png'
 import axios from 'axios'
+import PageWrapper from 'components/common/PageWrapper'
+import { colors } from 'utils'
 
 const des = `Have a sweet conversation - `
 

@@ -1,4 +1,4 @@
-import { colors, colors2 } from "@utils/index";
+import { colors, colors2 } from "../../utils/index";
 import React, { useContext, useEffect, useRef } from "react";
 import CustomCursorContext from "./context/CustomCursorContext";
 

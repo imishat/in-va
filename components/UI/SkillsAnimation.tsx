@@ -1,4 +1,4 @@
-import { colors2 } from "@utils/index";
+import { colors2 } from "../../utils/index";
 import React from "react";
 import { useEffect } from "react";
 import { transition } from '../../utils/index';

@@ -1,5 +1,5 @@
-import Portfolio from '@components/Portfolio'
-import CustomCursor from '@components/UI/CustomCursor'
+// import Portfolio from '@components/Portfolio'
+// import CustomCursor from '@components/UI/CustomCursor'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import React, { ReactElement, useEffect, useState } from 'react'

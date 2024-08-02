@@ -52,7 +52,7 @@ function FooterV2() {
         <div className=" mx-auto">
           <span className="block text-white sm:text-center font-thin ">
             Lightweight and wireless charging design, great for all headphones.
-            you'll like this: One key to answer the phone calls, and you can get
+            you will like this: One key to answer the phone calls, and you can get
             a perfect music while ...
           </span>
         </div>

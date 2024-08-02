@@ -1,3 +1,5 @@
+const path = require("path");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,7 +10,7 @@ const nextConfig = {
     WEBSITE: "https://invausa.com",
     EXPERIENCE: 3,
     EMAIL: "info@invausa.com",
-    SUPPORT_EMALI: "support@invausa.com",
+    SUPPORT_EMAIL: "support@invausa.com",
     MOBILE: "xxx xxx xxxx",
     ADDRESS: "-",
   },
@@ -20,6 +22,12 @@ const nextConfig = {
     // disableStaticImages: true,
   },
   webpack(config, { isServer }) {
+    // Add custom Webpack alias for three-stdlib
+    config.resolve.alias["three-stdlib"] = path.join(
+      __dirname,
+      "node_modules/three-stdlib"
+    );
+
     // Run custom scripts
     if (isServer) {
       require("./scripts/generate-sitemap");
@@ -46,11 +54,6 @@ const nextConfig = {
     });
 
     // Import `.glsl` shaders
-    config.module.rules.push({
-      test: /\.glsl$/,
-      type: "asset/source",
-    });
-
     config.module.rules.push({
       test: /\.glsl$/,
       type: "asset/source",

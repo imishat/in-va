@@ -6,7 +6,7 @@ import { Navigation } from './Navigation'
 import cn from 'classnames'
 import { useDimensions } from '../../../../hooks/use-dimentions'
 import { useTheme } from 'next-themes'
-import { spring } from '@utils/index'
+import { spring } from '../../../../utils/index'
 import Link from 'next/link'
 import logo from '../../../../public/logo-black.png'
 

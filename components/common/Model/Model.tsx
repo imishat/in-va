@@ -33,7 +33,7 @@ import {
 } from "utils/three";
 import s from "./Model.module.css";
 import { ModelAnimationType } from "./deviceModels";
-import { useInViewport } from "@hooks/use-inviewport";
+import { useInViewport } from "../../../hooks/use-inviewport";
 
 const MeshType = {
   Frame: "Frame",

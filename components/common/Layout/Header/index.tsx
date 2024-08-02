@@ -1,4 +1,4 @@
-import { Button } from '@components/UI'
+import { Button } from '../../../../components/UI'
 import {
   faFacebook,
   faFacebookSquare,
@@ -13,9 +13,9 @@ import Link from 'next/link'
 import React, { useContext, useState } from 'react'
 import { motion, useCycle } from 'framer-motion'
 import { MobileNav } from './MobileNav'
-import { colors, colors2, menus, spring, transition } from '@utils/index'
+import { colors, colors2, menus, spring, transition } from '../../../../utils/index'
 import { useTheme } from 'next-themes'
-import CustomCursorContext from '@components/UI/context/CustomCursorContext'
+import CustomCursorContext from '../../../../components/UI/context/CustomCursorContext'
 import cn from 'classnames'
 import { useRouter } from 'next/router'
 import {
@@ -29,7 +29,7 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
-import { LeetcodeIcon } from '@components/UI/icons'
+import { LeetcodeIcon } from '../../../../components/UI/icons'
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
 import logoImg from '../../../../public/logo.png'
 

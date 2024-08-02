@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './PageTitle.module.css'
 import cn from 'classnames'
-import { colors, colors2 } from '@utils/index'
+import { colors, colors2 } from '../../../utils/index'
 import { useRouter } from 'next/router'
 
 function PageTitle({
@@ -51,6 +51,7 @@ function PageTitle({
           <div className="w-full flex flex-wrap">
             {items?.map((item, i) => (
               <small
+              key={i}
                 className="mb-2 mr-2 px-2 py-[2px] lg:py-1 text-[9px] lg:text-xs font-bold rounded block"
                 style={{
                   color: colors2.concat(colors)[

@@ -1,10 +1,10 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 // @ts-ignore
-import GothamBold from "assets/fonts/gotham-bold.woff2";
+import GothamBold from "public/assets/fonts/gotham-bold.woff2";
 // @ts-ignore
-import GothamBook from "assets/fonts/gotham-book.woff2";
+import GothamBook from "public/assets/fonts/gotham-book.woff2";
 // @ts-ignore
-import GothamMedium from "assets/fonts/gotham-medium.woff2";
+import GothamMedium from "public/assets/fonts/gotham-medium.woff2";
 
 export function squish(styles: string) {
   return styles.replace(/\s\s+/g, " ");

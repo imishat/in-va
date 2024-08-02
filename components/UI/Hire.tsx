@@ -1,4 +1,4 @@
-import img from "@assets/images/r/mob1.jpeg";
+import img from "../../public/assets/images/r/mob1.jpeg";
 
 export default function Hire() {
   return (

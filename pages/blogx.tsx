@@ -1,11 +1,14 @@
-import GraphicAnim from '@common/GraphicAnim/GraphicAnim'
-import PageWrapper from '@common/PageWrapper'
+// import GraphicAnim from '@common/GraphicAnim/GraphicAnim'
+// import PageWrapper from '@common/PageWrapper'
 import React, { ReactElement, useState } from 'react'
-import GraphicPage from '../components/common/GraphicPage/GraphicPage'
+
 import ReactFluidScroll from 'react-fluid-scroll'
-import PageTitle from '@common/PageTitle'
-import { colors } from '@utils/index'
+// import PageTitle from '@common/PageTitle'
+// import { colors } from '@utils/index'
 import { motion } from 'framer-motion'
+import PageWrapper from 'components/common/PageWrapper'
+import PageTitle from 'components/common/PageTitle'
+import { colors } from 'utils'
 
 const des = `I have contributed in various field. The medias are -`
 

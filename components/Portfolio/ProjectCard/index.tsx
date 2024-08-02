@@ -6,7 +6,7 @@ import {
   useTransform,
 } from 'framer-motion'
 import useMeasure from 'react-use-measure'
-import { transition } from '@utils/index'
+import { transition } from '../../../utils/index'
 import Link from 'next/link'
 
 export default function ProjectCard({ data }: any) {
@@ -87,6 +87,7 @@ export default function ProjectCard({ data }: any) {
                 </Suspense> */}
                 {data?.tech?.map((item: string, i: number) => (
                   <motion.span
+                  key={i}
                     className="tech-ticket text-accent"
                     initial={{
                       opacity: 0,

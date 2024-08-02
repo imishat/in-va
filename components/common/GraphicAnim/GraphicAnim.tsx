@@ -7,7 +7,7 @@ import LightBulb from "./LightBulb";
 import OrbitControls from "./OrbitControls";
 import Draggable from "./Draggable";
 import dynamic from "next/dynamic";
-import SafeHydrate from "@common/SafeHydrate";
+import SafeHydrate from "../../common/SafeHydrate";
 
 const BoxCom: any = dynamic(() => import("./Box"), {
   ssr: false,

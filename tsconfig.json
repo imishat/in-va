@@ -14,7 +14,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    // "paths": {
+    //   "three/*": ["node_modules/three/*"],
+    //   "three-stdlib/*": ["node_modules/three-stdlib/*"]
+    // },
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "strict": true,
+    "esModuleInterop": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "components/common/Resume/Resume.tsx"]

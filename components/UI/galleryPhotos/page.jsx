@@ -1,16 +1,18 @@
-import img1 from "../../public/galleryImage/img22.png";
-import img2 from "../../public/galleryImage/img12.jpeg";
-import img3 from "../../public/galleryImage/img13.jpeg";
-import img4 from "../../public/galleryImage/img14.jpeg";
-import img5 from "../../public/galleryImage/img15.jpeg";
-import img6 from "../../public/galleryImage/img16.jpeg";
-import img7 from "../../public/galleryImage/img17.jpeg";
-import img8 from "../../public/galleryImage/img18.jpeg";
-import img9 from "../../public/galleryImage/img19.jpeg";
-import img10 from "../../public/galleryImage/img20.jpeg";
-import img11 from "../../public/galleryImage/img21.jpeg";
+import img1 from "../../../public/galleryImage/img22.png";
+import img2 from "../../../public/galleryImage/img12.jpeg";
+import img3 from "../../../public/galleryImage/img13.jpeg";
+import img4 from "../../../../public/galleryImage/img14.jpeg";
+import img5 from "../../../public/galleryImage/img15.jpeg";
+import img6 from "../../../public/galleryImage/img16.jpeg";
+import img7 from "../../../public/galleryImage/img17.jpeg";
+import img8 from "../../../public/galleryImage/img18.jpeg";
+import img9 from "../../../public/galleryImage/img19.jpeg";
+import img10 from "../../../public/galleryImage/img20.jpeg";
+import img11 from "../../../public/galleryImage/img21.jpeg";
 
-export default function GallaryPhotos() {
+
+
+export default function GalleryPhotos() {
   return (
     <>
       <div className="relative mx-auto max-w-screen-2xl bg-gray-50 px-4 py-16 lg:py-24">

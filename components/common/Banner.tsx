@@ -1,7 +1,7 @@
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
-import img from '@assets/images/r/mob3-t.png'
+import img from '../../public/assets/images/r/mob3-t.png'
 
 const Banner = () => {
   const widthRef: any = useRef()

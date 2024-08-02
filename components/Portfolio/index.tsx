@@ -1,4 +1,4 @@
-import Container from "@common/Container";
+import Container from "../common/Container";
 import React from "react";
 import s from "./Portfolio.module.css";
 import cn from "classnames";
@@ -8,16 +8,15 @@ import {
   motion,
   useViewportScroll,
 } from "framer-motion";
-import { ParallaxImage } from "@components/UI";
-import { Card } from "./Card";
+
 import { useRouter } from "next/router";
-import ProjectCard from "./ProjectCard";
-import { transition } from "@utils/index";
+// import ProjectCard from "./ProjectCard";
+// import { transition } from "@utils/index";
 import Link from "next/link";
-import img1 from "@assets/images/m1.jpg";
-import img2 from "@assets/images/m2.jpg";
-import img3 from "@assets/images/m3.jpeg";
-import img4 from "@assets/images/m4.webp";
+import img1 from "../../public/assets/images/m1.jpg";
+import img2 from "../../public/assets/images/m2.jpg";
+import img3 from "../../public/assets/images/m3.jpeg";
+import img4 from "../../public/assets/images/m4.webp";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const cardData: any[] = [

@@ -1,10 +1,10 @@
-import Container from '@common/Container'
+import Container from '../common/Container'
 import React, { useEffect } from 'react'
 import s from './About.module.css'
 import cn from 'classnames'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
-import { Button, HashObstacles, SkillsAnimation } from '@components/UI'
-import AboutAnimation from '@components/UI/AboutAnimation'
+import { Button, HashObstacles, SkillsAnimation } from '../../components/UI'
+
 import gsap from 'gsap'
 import * as THREE from 'three'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,7 +20,7 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 
-import img from '@assets/images/hand.png'
+// import img from '../../public/assets/images/hand.png'
 import Link from 'next/link'
 
 function About() {
@@ -49,15 +49,15 @@ function About() {
             </h2>
             <p className="font-lighter text-sm text-secondary">
               Discover iNVA, your gateway to high-quality smartphones at
-              unbeatable prices. We're not just about affordability; we're about
+              unbeatable prices. We re not just about affordability; we're about
               delivering top-notch quality that lasts. With an iNVA smartphone,
               you get a powerful device that keeps up with your demands,
               offering the best performance and longevity.
               <p className="hidden lg:inline">
-                But it doesn't stop there – our commitment to customer service
+                But it doesn  t stop there – our commitment to customer service
                 ensures you have a hassle-free experience at every step of your
-                smartphone journey. We've redefined the standard for excellence
-                in the mobile industry, and we're here to provide you with the
+                smartphone journey. Weve redefined the standard for excellence
+                in the mobile industry, and we re here to provide you with the
                 best, for less.
               </p>
               Welcome to iNVA, where quality, longevity, and service come
@@ -103,11 +103,11 @@ function About() {
               </div>
               <div></div>
             </div>
-            <img
+            {/* <img
               src={img.src}
               className="z-20 absolute scale(1.5) absolute right-[-30%] w-64 top-[-50px]"
               style={{ transform: 'scale(1.4) rotateY(180deg)' }}
-            />
+            /> */}
 
             <div
               style={{ background: 'rgba(5, 5, 0, .05)', opacity: 0.5 }}

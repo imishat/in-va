@@ -1,8 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { colors, colors2 } from "@utils/index";
-import { menus } from "@utils/index";
+import { colors, colors2 } from "../../../../utils/index";
+import { menus } from "../../../../utils/index";
 
 const variants = {
   open: {

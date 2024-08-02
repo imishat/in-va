@@ -1,10 +1,11 @@
-import img1 from "@assets/images/hand.jpg";
-import img2 from "@assets/images/m1.jpg";
-import img3 from "@assets/images/hand.png";
-import img4 from "@assets/images/m2.jpg";
+import img1 from "../../../public/assets/images/hand.jpg";
+import img2 from "../../../public/assets/images/m1.jpg";
+import img3 from "../../../public/assets/images/hand.png";
+import img4 from "../../../public/assets/images/m2.jpg";
 import Link  from 'next/link';
 
-export default function GallarySlider() {
+
+export default function GallerySlider() {
   return (
     <div>
       <div className=" text-center">

@@ -1,8 +1,9 @@
-import { DRACOLoader, GLTFLoader } from 'three-stdlib';
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const dracoLoader = new DRACOLoader();
 const gltfLoader = new GLTFLoader();
-dracoLoader.setDecoderPath('/draco/');
+dracoLoader.setDecoderPath("/examples/jsm/libs/draco/");
 gltfLoader.setDRACOLoader(dracoLoader);
 
 /**
@@ -13,31 +14,42 @@ export const modelLoader = gltfLoader;
 /**
  * Clean up a scene's materials and geometry
  */
-export const cleanScene = (scene: { traverse: (arg0: (object: any) => void) => void; }) => {
-  scene?.traverse((object: { isMesh: any; geometry: { dispose: () => void; }; material: { isMaterial: any; }; }) => {
-    if (!object.isMesh) return;
+export const cleanScene = (scene: {
+  traverse: (arg0: (object: any) => void) => void;
+}) => {
+  scene?.traverse(
+    (object: {
+      isMesh: any;
+      geometry: { dispose: () => void };
+      material: { isMaterial: any };
+    }) => {
+      if (!object.isMesh) return;
 
-    object.geometry.dispose();
+      object.geometry.dispose();
 
-    if (object.material.isMaterial) {
-      cleanMaterial(object.material);
-    } else {
-      for (const material of (object as any).material) {
-        cleanMaterial(material);
+      if (object.material.isMaterial) {
+        cleanMaterial(object.material);
+      } else {
+        for (const material of (object as any).material) {
+          cleanMaterial(material);
+        }
       }
     }
-  });
+  );
 };
 
 /**
  * Clean up and dispose of a material
  */
-export const cleanMaterial = (material: { [x: string]: any; dispose?: any; }) => {
+export const cleanMaterial = (material: {
+  [x: string]: any;
+  dispose?: any;
+}) => {
   material.dispose();
 
   for (const key of Object.keys(material)) {
     const value = material[key];
-    if (value && typeof value === 'object' && 'minFilter' in value) {
+    if (value && typeof value === "object" && "minFilter" in value) {
       value.dispose();
     }
   }
@@ -46,7 +58,9 @@ export const cleanMaterial = (material: { [x: string]: any; dispose?: any; }) =>
 /**
  * Clean up and dispose of a renderer
  */
-export const cleanRenderer = (renderer: { dispose: () => void; forceContextLoss: () => void; } | null) => {
+export const cleanRenderer = (
+  renderer: { dispose: () => void; forceContextLoss: () => void } | null
+) => {
   renderer?.dispose();
   renderer?.forceContextLoss();
   renderer = null;
@@ -64,10 +78,13 @@ export const removeLights = (lights: any) => {
 /**
  * Get child by name
  */
-export const getChild = (name: any, object: { traverse: (arg0: (child: any) => void) => void; }) => {
+export const getChild = (
+  name: any,
+  object: { traverse: (arg0: (child: any) => void) => void }
+) => {
   let node;
 
-  object.traverse((child: { name: any; }) => {
+  object.traverse((child: { name: any }) => {
     if (child.name === name) {
       node = child;
     }

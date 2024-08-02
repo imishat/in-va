@@ -1,12 +1,8 @@
-import GraphicAnim from '@common/GraphicAnim/GraphicAnim'
-import PageWrapper from '@common/PageWrapper'
+
 import React, { ReactElement } from 'react'
-import GraphicPage from '../components/common/GraphicPage/GraphicPage'
+
 import ReactFluidScroll from 'react-fluid-scroll'
-import PageTitle from '@common/PageTitle'
-import { SkillsAnimation } from '@components/UI'
-import AboutAnimation from '@components/UI/AboutAnimation'
-import { Main } from 'next/document'
+
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -18,10 +14,12 @@ import {
   faPhoneFlip,
   faPhoneSlash,
 } from '@fortawesome/free-solid-svg-icons'
-import { colors } from '@utils/index'
-import img2 from '@assets/images/m5.jpg'
-import img from '@assets/images/m7.jpg'
-import img3 from '@assets/images/shadow.png'
+import { colors } from '../utils/index'
+// import img2 from '../public/assets/images/m5.jpg'
+// import img from '../public/assets/images/m7.jpg'
+
+
+import PageWrapper from 'components/common/PageWrapper'
 
 const des = `Have a sweet conversation - `
 
@@ -49,7 +47,7 @@ const anim = {
   },
 }
 
-const ContactPage = () => {
+const About = () => {
   return (
     <PageWrapper title="About" description={des} items={contacts}>
       <div className="">
@@ -66,7 +64,7 @@ const ContactPage = () => {
             {/* <AboutAnimation /> */}
             <div className="mb-6">
               <div className="lg:flex-row flex-col flex gap-4 lg:gap-8 mr-0">
-                <img
+                {/* <img
                   src={img2.src}
                   alt=""
                   className="rounded-md p-0 outlinex outline-orange-200 lg:object-cover lg:w-96"
@@ -76,7 +74,7 @@ const ContactPage = () => {
                       // borderRight: '1px solid #f6eeee',
                     }
                   }
-                />
+                /> */}
                 <div className="">
                   <div className="mb-6">
                     <h1 className="text-xl font-bold mb-4">
@@ -161,7 +159,7 @@ const ContactPage = () => {
                   </div>
                 </div>
                 <div className="lg:col-span-2 flex flex-col items-center mb-6 lg:mb-0">
-                  <img
+                  {/* <img
                     src={img.src}
                     alt=""
                     className="fixtop-0 lg:py-6"
@@ -171,7 +169,7 @@ const ContactPage = () => {
                         // borderRight: '1px solid #f6eeee',
                       }
                     }
-                  />
+                  /> */}
                   <span className="h-0 shadow-xl rounded-full w-32" style={{boxShadow: '10px 10px 20px 1px rgba(0, 0, 0, 1)'}}></span>
                 </div>
               </div>
@@ -203,4 +201,4 @@ const ContactPage = () => {
   )
 }
 
-export default ContactPage
+export default About
