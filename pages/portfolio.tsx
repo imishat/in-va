@@ -200,6 +200,7 @@ function PortfolioPage() {
                     <div className="flex w-full flex-wrap">
                       {item.techs?.map((item, i) => (
                         <small
+                        key={i}
                           className="mb-1 lg:mb-2 mr-1 lg:mr-2 block rounded px-1 lg:px-2 lg:py-1 text-[8px] lg:text-xs font-bold"
                           style={{
                             color: colors2.concat(colors)[
